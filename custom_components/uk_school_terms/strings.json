@@ -1,0 +1,51 @@
+{
+  "title": "UK School Terms",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add UK school terms",
+        "description": "Choose a council and optionally add school-specific closure dates.",
+        "data": {
+          "country": "Country",
+          "council": "Council / local authority",
+          "school_name": "School name (optional)",
+          "inset_days": "Inset days (one YYYY-MM-DD date per line)",
+          "closure_days": "Extra closure days (one YYYY-MM-DD date per line)",
+          "exclude_bank_holidays": "Exclude bank holidays from school days"
+        }
+      }
+    },
+    "error": {
+      "invalid_date": "One or more dates are invalid. Use YYYY-MM-DD, one date per line."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Edit school-specific dates",
+        "data": {
+          "inset_days": "Inset days (one YYYY-MM-DD date per line)",
+          "closure_days": "Extra closure days (one YYYY-MM-DD date per line)",
+          "exclude_bank_holidays": "Exclude bank holidays from school days"
+        }
+      }
+    },
+    "error": {
+      "invalid_date": "One or more dates are invalid. Use YYYY-MM-DD, one date per line."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "school_day": {"name": "School day"},
+      "term_time": {"name": "Term time"}
+    },
+    "sensor": {
+      "current_term": {"name": "Current term"},
+      "next_event": {"name": "Next event"},
+      "days_until_next_event": {"name": "Days until next event"}
+    },
+    "calendar": {
+      "school_terms": {"name": "School terms"}
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "uk_school_terms",
+  "name": "UK School Terms",
+  "codeowners": ["@robbrad"],
+  "config_flow": true,
+  "documentation": "https://github.com/robbrad/uk_term_dates",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/robbrad/uk_term_dates/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
